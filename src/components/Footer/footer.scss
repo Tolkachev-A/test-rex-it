@@ -1,0 +1,20 @@
+.footer {
+    background-image: url("../../assets/img/footer.png");
+    background-size: cover;
+    background-position: bottom center;
+    color: white;
+    height: 780px;
+    padding: 60px 0;
+
+    &__share-box {
+        a {
+            text-decoration: none;
+            color: white;
+            transition: opacity 0.2s linear;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
