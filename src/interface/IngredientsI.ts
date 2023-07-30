@@ -1,6 +1,8 @@
+import { IngredientKeyType } from '../types';
+
 export interface IngredientsStateI {
   ingredients: IngredientsI;
-  pack: number;
+  pack: string;
 }
 
 export interface IngredientsI {
@@ -10,6 +12,7 @@ export interface IngredientsI {
   corn: number;
 }
 
-export interface IngredientI {
-  IngredientType: number;
+export interface ChangeIngredientI {
+  name: IngredientKeyType;
+  value: number;
 }

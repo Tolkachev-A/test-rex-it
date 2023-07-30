@@ -1,2 +1,2 @@
 export { Patch } from './Patch';
-export { INGREDIENT_KEY } from './IngredientKey';
+export { ACTION_KEY } from './IngredientKey';

@@ -1,9 +1,5 @@
-import { INGREDIENT_KEY } from '../enums';
-import { IngredientI } from '../interface';
+import { setIngredient, setPack } from 'store/actions';
 
-export type ActionIngredientType = SetIngredientType;
-
-export type SetIngredientType = {
-  type: INGREDIENT_KEY.SET_INGREDIENT_VALUE;
-  payload: IngredientI;
-};
+export type ActionIngredientType =
+  | ReturnType<typeof setIngredient>
+  | ReturnType<typeof setPack>;

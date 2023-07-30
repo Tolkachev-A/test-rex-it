@@ -12,13 +12,7 @@ import { store } from 'store';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
-const theme = createTheme({
-  palette: {
-    primary: { main: '#F4E041' },
-    secondary: { main: '#00BDD3' },
-    success: { main: '#D0CFCF' },
-  },
-});
+const theme = createTheme({});
 
 root.render(
   <Provider store={store}>

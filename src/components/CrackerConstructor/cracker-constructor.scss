@@ -1,0 +1,88 @@
+.container{
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+.cracker__fon{
+  background-image: url("../../assets/img/craker-fon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  .cracker{
+
+    padding-top: 80px;
+
+    .cracker__about{
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+
+
+
+     }
+    .about__before{
+      top: 174px;
+      position: absolute;
+
+      &:before{
+        content: '';
+        background: rgba(229, 211, 207, 0.80);
+        right: 0;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        z-index: 100;
+      }
+
+      .about{
+        z-index: 10000;
+        position: relative;
+
+        .about__text{
+          position: relative;
+          padding: 60px 0 60px 80px;
+          margin: 0;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          background: rgba(229, 211, 207, 0.80);
+
+          img{
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .cracker__header{
+    margin-left: 37px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(77, 77, 77, 1);
+  }
+
+  .cracker__constructor{
+    padding: 174px 0 140px 0;
+  }
+
+  .cracker__value{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 16px;
+  }
+}
+

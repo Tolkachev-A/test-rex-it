@@ -1,1 +1,2 @@
-export type { IngredientsStateI, IngredientsI, IngredientI } from './IngredientsI';
+export type { IngredientsStateI, IngredientsI, ChangeIngredientI } from './IngredientsI';
+export type { BasketStateInit } from './BasketI';

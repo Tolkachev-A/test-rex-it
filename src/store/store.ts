@@ -2,7 +2,13 @@
 import { applyMiddleware, combineReducers, compose, legacy_createStore } from 'redux';
 import thunk from 'redux-thunk';
 
-const rootReducer = combineReducers({});
+import { basketReducer } from './reducers/basketReducer';
+import { ingredientsReducer } from './reducers/ingredientsReducer';
+
+const rootReducer = combineReducers({
+  ingredientState: ingredientsReducer,
+  basketState: basketReducer,
+});
 
 declare global {
   interface Window {

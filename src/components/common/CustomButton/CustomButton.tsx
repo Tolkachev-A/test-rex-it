@@ -1,34 +1,49 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 
-import { Button } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import { IconButton, Typography, Grow } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
-import './style/custom-button.scss';
+const RedIconButton = styled(IconButton)(() => ({
+  color: 'white',
+  backgroundColor: '#FF0000',
+  '&:hover': {
+    backgroundColor: '#FF0000',
+    borderRadius: 90,
+  },
+}));
 
-type CustomButtonType = {
-  title: string;
-  width?: string;
-  type?: 'button' | 'submit' | 'reset';
-  disabled?: boolean;
-  onClick?: () => void;
-};
-export const CustomButton = ({
-  title,
-  type = 'button',
-  width = '100',
-  onClick,
-  disabled,
-}: CustomButtonType): ReactElement => {
+interface CustomButtonI {
+  callback: (e: any) => void;
+}
+
+export const CustomButton = ({ callback }: CustomButtonI) => {
+  const [hover, setHover] = React.useState(false);
+
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
+
+  const paddingButton = hover ? '14px 24px 14px 32px' : '16px';
+
   return (
-    <Button
-      style={{ width: `${width}px` }}
-      type={type}
-      className="btn"
-      variant="contained"
-      color="primary"
-      onClick={onClick}
-      disabled={disabled}
+    <RedIconButton
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      size="medium"
+      onClick={callback}
+      sx={{ padding: paddingButton, height: '56px' }}
     >
-      {title}
-    </Button>
+      <Grow in={hover}>
+        <Typography component="span" sx={{ fontSize: '20px' }}>
+          {hover && 'Add to cart'}
+        </Typography>
+      </Grow>
+      <AddIcon sx={{ fontSize: '24px' }} />
+    </RedIconButton>
   );
 };
