@@ -12,7 +12,20 @@ import { store } from 'store';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
-const theme = createTheme({});
+const theme = createTheme({
+  typography: {
+    fontFamily: ['Rubik', 'sans-serif'].join(','),
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+});
 
 root.render(
   <Provider store={store}>
