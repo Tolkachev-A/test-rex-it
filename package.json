@@ -1,7 +1,7 @@
 {
-  "name": "test_task",
+  "name": "test-rex-it",
   "version": "0.1.0",
-  "homepage": "https://tolkachev-a.github.io/test_rex_it",
+  "homepage": "https://tolkachev-a.github.io/test-rex-it/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
