@@ -23,6 +23,9 @@ const style = {
   top: '58px',
   position: 'absolute',
   right: 0,
+  '&:focus-visible': {
+    outline: 'none',
+  },
 };
 
 interface CustomModalI {
