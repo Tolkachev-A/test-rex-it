@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test-rex-it/static/css/main.77f07a3e.css",
+    "main.css": "/test-rex-it/static/css/main.6025e290.css",
     "main.js": "/test-rex-it/static/js/main.9a4fc350.js",
     "static/media/craker-fon.jpg": "/test-rex-it/static/media/craker-fon.a731418f692cdf4f24ab.jpg",
     "static/media/hero.png": "/test-rex-it/static/media/hero.c6b2016f87a650588968.png",
@@ -14,11 +14,11 @@
     "static/media/pack.svg": "/test-rex-it/static/media/pack.a399bc6fb9f91ccf3b5501d801c1dee4.svg",
     "static/media/seed.svg": "/test-rex-it/static/media/seed.83ca50e2d8592f8c0297863aca1623d3.svg",
     "index.html": "/test-rex-it/index.html",
-    "main.77f07a3e.css.map": "/test-rex-it/static/css/main.77f07a3e.css.map",
+    "main.6025e290.css.map": "/test-rex-it/static/css/main.6025e290.css.map",
     "main.9a4fc350.js.map": "/test-rex-it/static/js/main.9a4fc350.js.map"
   },
   "entrypoints": [
-    "static/css/main.77f07a3e.css",
+    "static/css/main.6025e290.css",
     "static/js/main.9a4fc350.js"
   ]
 }
