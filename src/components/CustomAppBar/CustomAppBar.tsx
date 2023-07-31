@@ -14,10 +14,14 @@ import { CustomModal } from '../CustomModal';
 
 import Logo from 'assets/svg/Cracker.svg';
 import Seed from 'assets/svg/seed.svg';
+import { useAppSelector } from 'hooks';
+import { selectBasketData } from 'store/selectors';
 
 const navItems = ['Home', 'About Us', 'Contact Us', 'Contact', 'Checkout'];
 
 export const CustomAppBar = () => {
+  const { id } = useAppSelector(selectBasketData);
+
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(true);
   const handleClose = () => {
@@ -70,7 +74,11 @@ export const CustomAppBar = () => {
                 }}
               >
                 <Box sx={{ position: 'relative' }}>
-                  <Badge badgeContent={1} color="error" onClick={handleOpen}>
+                  <Badge
+                    badgeContent={id?.length || 0}
+                    color="error"
+                    onClick={handleOpen}
+                  >
                     <img src={Seed} alt="Logo" />
                   </Badge>
                   <CustomModal open={open} callback={handleClose} />
