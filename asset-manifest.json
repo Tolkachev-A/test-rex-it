@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-rex-it/static/css/main.77f07a3e.css",
-    "main.js": "/test-rex-it/static/js/main.7155fa63.js",
+    "main.js": "/test-rex-it/static/js/main.9a4fc350.js",
     "static/media/craker-fon.jpg": "/test-rex-it/static/media/craker-fon.a731418f692cdf4f24ab.jpg",
     "static/media/hero.png": "/test-rex-it/static/media/hero.c6b2016f87a650588968.png",
     "static/media/footer.png": "/test-rex-it/static/media/footer.81d4a0dc2903d6d06fdb.png",
@@ -15,10 +15,10 @@
     "static/media/seed.svg": "/test-rex-it/static/media/seed.83ca50e2d8592f8c0297863aca1623d3.svg",
     "index.html": "/test-rex-it/index.html",
     "main.77f07a3e.css.map": "/test-rex-it/static/css/main.77f07a3e.css.map",
-    "main.7155fa63.js.map": "/test-rex-it/static/js/main.7155fa63.js.map"
+    "main.9a4fc350.js.map": "/test-rex-it/static/js/main.9a4fc350.js.map"
   },
   "entrypoints": [
     "static/css/main.77f07a3e.css",
-    "static/js/main.7155fa63.js"
+    "static/js/main.9a4fc350.js"
   ]
 }
