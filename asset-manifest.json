@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/test_rex_it/static/css/main.5190777f.css",
-    "main.js": "/test_rex_it/static/js/main.a918a4e2.js",
-    "static/media/craker-fon.jpg": "/test_rex_it/static/media/craker-fon.a731418f692cdf4f24ab.jpg",
-    "static/media/hero.png": "/test_rex_it/static/media/hero.c6b2016f87a650588968.png",
-    "static/media/footer.png": "/test_rex_it/static/media/footer.81d4a0dc2903d6d06fdb.png",
-    "static/media/crakerImg.png": "/test_rex_it/static/media/crakerImg.d11a9317e183f9bbfc74.png",
-    "static/media/Cracker.svg": "/test_rex_it/static/media/Cracker.be1652c5948d5d03ce88a3dcb42c3361.svg",
-    "static/media/soybean.svg": "/test_rex_it/static/media/soybean.cd28396ff645e1a31e8775b9f0701f54.svg",
-    "static/media/wheat.svg": "/test_rex_it/static/media/wheat.c3d32159ca7dff3e037d3290f68981a9.svg",
-    "static/media/corn.svg": "/test_rex_it/static/media/corn.7c42ff7028bb5fd8f7650db1ed664dd7.svg",
-    "static/media/sesame.svg": "/test_rex_it/static/media/sesame.2dfc222d806b07be29351c89b06238dd.svg",
-    "static/media/pack.svg": "/test_rex_it/static/media/pack.a399bc6fb9f91ccf3b5501d801c1dee4.svg",
-    "static/media/seed.svg": "/test_rex_it/static/media/seed.83ca50e2d8592f8c0297863aca1623d3.svg",
-    "index.html": "/test_rex_it/index.html",
-    "main.5190777f.css.map": "/test_rex_it/static/css/main.5190777f.css.map",
-    "main.a918a4e2.js.map": "/test_rex_it/static/js/main.a918a4e2.js.map"
+    "main.css": "/test-rex-it/static/css/main.55502ca8.css",
+    "main.js": "/test-rex-it/static/js/main.01fc40ec.js",
+    "static/media/craker-fon.jpg": "/test-rex-it/static/media/craker-fon.a731418f692cdf4f24ab.jpg",
+    "static/media/hero.png": "/test-rex-it/static/media/hero.c6b2016f87a650588968.png",
+    "static/media/footer.png": "/test-rex-it/static/media/footer.81d4a0dc2903d6d06fdb.png",
+    "static/media/crakerImg.png": "/test-rex-it/static/media/crakerImg.d11a9317e183f9bbfc74.png",
+    "static/media/Cracker.svg": "/test-rex-it/static/media/Cracker.be1652c5948d5d03ce88a3dcb42c3361.svg",
+    "static/media/soybean.svg": "/test-rex-it/static/media/soybean.cd28396ff645e1a31e8775b9f0701f54.svg",
+    "static/media/wheat.svg": "/test-rex-it/static/media/wheat.c3d32159ca7dff3e037d3290f68981a9.svg",
+    "static/media/corn.svg": "/test-rex-it/static/media/corn.7c42ff7028bb5fd8f7650db1ed664dd7.svg",
+    "static/media/sesame.svg": "/test-rex-it/static/media/sesame.2dfc222d806b07be29351c89b06238dd.svg",
+    "static/media/pack.svg": "/test-rex-it/static/media/pack.a399bc6fb9f91ccf3b5501d801c1dee4.svg",
+    "static/media/seed.svg": "/test-rex-it/static/media/seed.83ca50e2d8592f8c0297863aca1623d3.svg",
+    "index.html": "/test-rex-it/index.html",
+    "main.55502ca8.css.map": "/test-rex-it/static/css/main.55502ca8.css.map",
+    "main.01fc40ec.js.map": "/test-rex-it/static/js/main.01fc40ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.5190777f.css",
-    "static/js/main.a918a4e2.js"
+    "static/css/main.55502ca8.css",
+    "static/js/main.01fc40ec.js"
   ]
 }
