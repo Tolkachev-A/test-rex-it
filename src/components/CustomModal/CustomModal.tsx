@@ -56,12 +56,14 @@ export const CustomModal = ({ open, callback }: CustomModalI) => {
         open={open}
         onClose={callback}
         BackdropProps={{
-          style: { backgroundColor: 'rgba(0, 0, 0, 0)' }, // Set the background color of the backdrop
+          style: { backgroundColor: 'rgba(0, 0, 0, 0)' },
         }}
         sx={{
           padding: '32px',
           zIndex: 10000,
           backgroundColor: 'initial',
+          maxWidth: '900px',
+          margin: '0px auto',
         }}
       >
         <Box sx={style}>

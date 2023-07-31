@@ -73,17 +73,9 @@ export const CustomAppBar = () => {
                   justifyContent: 'space-between',
                 }}
               >
-                <Box sx={{ position: 'relative' }}>
-                  <Badge
-                    badgeContent={id?.length || 0}
-                    color="error"
-                    onClick={handleOpen}
-                  >
-                    <img src={Seed} alt="Logo" />
-                  </Badge>
-                  <CustomModal open={open} callback={handleClose} />
-                </Box>
-
+                <Badge badgeContent={id?.length || 0} color="error">
+                  <img src={Seed} alt="Logo" />
+                </Badge>
                 <Typography
                   component="h2"
                   className="hero-section__title"
@@ -95,6 +87,25 @@ export const CustomAppBar = () => {
                 >
                   TOTAL: 143€
                 </Typography>
+                <Box sx={{ position: 'relative' }}>
+                  <Typography
+                    onClick={handleOpen}
+                    component="h2"
+                    className="hero-section__title"
+                    sx={() => ({
+                      color: 'white',
+                      fontWeight: 500,
+                      pl: 3,
+                      '&:hover': {
+                        color: '#FF4200',
+                        cursor: 'pointer',
+                      },
+                    })}
+                  >
+                    DETAILS
+                  </Typography>
+                  <CustomModal open={open} callback={handleClose} />
+                </Box>
               </Box>
             </Container>
           </Box>
