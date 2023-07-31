@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-rex-it/static/css/main.55502ca8.css",
-    "main.js": "/test-rex-it/static/js/main.a87e6e88.js",
+    "main.css": "/test-rex-it/static/css/main.469e42dd.css",
+    "main.js": "/test-rex-it/static/js/main.7155fa63.js",
     "static/media/craker-fon.jpg": "/test-rex-it/static/media/craker-fon.a731418f692cdf4f24ab.jpg",
     "static/media/hero.png": "/test-rex-it/static/media/hero.c6b2016f87a650588968.png",
     "static/media/footer.png": "/test-rex-it/static/media/footer.81d4a0dc2903d6d06fdb.png",
@@ -14,11 +14,11 @@
     "static/media/pack.svg": "/test-rex-it/static/media/pack.a399bc6fb9f91ccf3b5501d801c1dee4.svg",
     "static/media/seed.svg": "/test-rex-it/static/media/seed.83ca50e2d8592f8c0297863aca1623d3.svg",
     "index.html": "/test-rex-it/index.html",
-    "main.55502ca8.css.map": "/test-rex-it/static/css/main.55502ca8.css.map",
-    "main.a87e6e88.js.map": "/test-rex-it/static/js/main.a87e6e88.js.map"
+    "main.469e42dd.css.map": "/test-rex-it/static/css/main.469e42dd.css.map",
+    "main.7155fa63.js.map": "/test-rex-it/static/js/main.7155fa63.js.map"
   },
   "entrypoints": [
-    "static/css/main.55502ca8.css",
-    "static/js/main.a87e6e88.js"
+    "static/css/main.469e42dd.css",
+    "static/js/main.7155fa63.js"
   ]
 }
