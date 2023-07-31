@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import { Container, IconButton, Typography } from '@mui/material';
@@ -9,12 +10,25 @@ import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 
+import { CustomModal } from '../CustomModal';
+
 import Logo from 'assets/svg/Cracker.svg';
 import Seed from 'assets/svg/seed.svg';
 
 const navItems = ['Home', 'About Us', 'Contact Us', 'Contact', 'Checkout'];
 
 export const CustomAppBar = () => {
+  const [open, setOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const onMenuClick = () => {
+    setOpenMenu(!openMenu);
+  };
+  const handleOpen = () => setOpen(true);
+
   return (
     <Box
       sx={{
@@ -55,9 +69,13 @@ export const CustomAppBar = () => {
                   justifyContent: 'space-between',
                 }}
               >
-                <Badge badgeContent={1} color="error">
-                  <img src={Seed} alt="Logo" />
-                </Badge>
+                <Box sx={{ position: 'relative' }}>
+                  <Badge badgeContent={1} color="error" onClick={handleOpen}>
+                    <img src={Seed} alt="Logo" />
+                  </Badge>
+                  <CustomModal open={open} callback={handleClose} />
+                </Box>
+
                 <Typography
                   component="h2"
                   className="hero-section__title"
@@ -86,25 +104,28 @@ export const CustomAppBar = () => {
                 color="inherit"
                 aria-label="menu"
                 sx={{ mr: 2, display: { xs: 'flex', md: 'none' } }}
+                onClick={onMenuClick}
               >
                 <MenuIcon />
               </IconButton>
-              <Box
-                sx={{
-                  width: '100%',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  height: { xs: '0', md: '82px' },
-                  overflow: 'hidden',
-                  flexDirection: { xs: 'column', md: 'row' },
-                }}
-              >
-                {navItems.map(item => (
-                  <Button key={item} sx={{ color: '#fff', padding: '15px 30px' }}>
-                    {item}
-                  </Button>
-                ))}
-              </Box>
+              {openMenu && (
+                <Box
+                  sx={{
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    height: { xs: '0', md: '82px' },
+                    overflow: 'hidden',
+                    flexDirection: { xs: 'column', md: 'row' },
+                  }}
+                >
+                  {navItems.map(item => (
+                    <Button key={item} sx={{ color: '#fff', padding: '15px 30px' }}>
+                      {item}
+                    </Button>
+                  ))}
+                </Box>
+              )}
             </Container>
           </Box>
         </Toolbar>

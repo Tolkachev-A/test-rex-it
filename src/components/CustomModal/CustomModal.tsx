@@ -3,10 +3,9 @@ import { useMemo } from 'react';
 
 import { Grid } from '@mui/material';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 
-import { useAppDispatch, useAppSelector } from '../../hooks';
+import { useAppSelector } from '../../hooks';
 import { selectBasketData } from '../../store/selectors';
 import { ItemModal } from '../common';
 
@@ -21,18 +20,17 @@ const style = {
   borderRadius: '24px',
   boxShadow: '0px 4px 16px 0px rgba(0, 0, 0, 0.20)',
   p: 4,
+  top: '58px',
+  position: 'absolute',
+  right: 0,
 };
 
-export const CustomModal = () => {
-  const dispatch = useAppDispatch();
-
-  // eslint-disable-next-line no-console
-  console.log(dispatch);
+interface CustomModalI {
+  open: boolean;
+  callback: () => void;
+}
+export const CustomModal = ({ open, callback }: CustomModalI) => {
   const { data, id } = useAppSelector(selectBasketData);
-
-  const [open, setOpen] = React.useState(true);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
 
   const itemModal = useMemo(() => {
     if (data) {
@@ -54,10 +52,9 @@ export const CustomModal = () => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={callback}
         BackdropProps={{
           style: { backgroundColor: 'rgba(0, 0, 0, 0)' }, // Set the background color of the backdrop
         }}

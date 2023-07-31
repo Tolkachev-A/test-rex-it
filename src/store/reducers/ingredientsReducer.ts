@@ -1,8 +1,7 @@
-import { getNewValueIngredients } from '../../utils';
-
 import { ACTION_KEY } from 'enums';
 import { IngredientsStateI } from 'interface';
 import { ActionIngredientType } from 'types';
+import { getNewValueIngredients } from 'utils';
 
 const initIngredientsState: IngredientsStateI = {
   ingredients: { soybean: 30, sesame: 30, wheat: 30, corn: 10 },
